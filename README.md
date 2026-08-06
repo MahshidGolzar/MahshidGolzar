@@ -9,7 +9,7 @@ PhD researcher turned quantitative analyst. My PhD was about turbulence, diffusi
 **[black_scholes_pde_greeks](https://github.com/MahshidGolzar/black_scholes_pde_greeks)**
 A European option pricer built two independent ways, closed-form analytical and numerical PDE, specifically to cross-validate each other. Implements all five Greeks and three finite-difference schemes (explicit, implicit, Crank-Nicolson), and includes a test that deliberately proves the explicit scheme is unstable on a naive grid, an intentional validation finding, not a bug.
 
-![Convergence plot]([https://raw.githubusercontent.com/MahshidGolzar/black_scholes_pde_greeks/main/convergence_plot.png](https://raw.githubusercontent.com/MahshidGolzar/black_scholes_pde_greeks/main/black_scholes_pde/convergence_plot.png))
+![Convergence plot](https://raw.githubusercontent.com/MahshidGolzar/black_scholes_pde_greeks/main/black_scholes_pde/convergence_plot.png)
 
 **[risk_engine_monte_carlo](https://github.com/MahshidGolzar/risk_engine_monte_carlo)**
 A modular Python risk engine implementing Historical, Parametric, and Monte Carlo VaR alongside Expected Shortfall, validated through Kupiec and Christoffersen backtesting.
