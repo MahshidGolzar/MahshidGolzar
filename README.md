@@ -1,6 +1,6 @@
 # Hi, I'm Mahshid 👋
 
-PhD researcher turned quantitative analyst. My PhD was about turbulence, diffusion, and dispersion, and the mathematics behind it turned out to map directly onto quantitative finance: mean drift plus random noise, the same structure underneath Black-Scholes. I made that connection while studying for my MSc in Financial Engineering, and it's shaped how I approach model building ever since.
+C++ and Python engineer with a PhD background in large-scale scientific computing, now moving into applied AI and deep learning. My PhD was about turbulence, diffusion, and dispersion, and the mathematics behind it turned out to map directly onto quantitative finance: mean drift plus random noise, the same structure underneath Black-Scholes. I made that connection while studying for my MSc in Financial Engineering — and the same discipline (build from first principles, test rigorously, trust nothing until it's validated) is what I'm now bringing to C++/PyTorch and AI framework work.
 
 **My approach to any model:** build it from first principles, calibrate it against real data, stress-test its assumptions, and validate it independently before trusting its output. That's the discipline my PhD trained into me, and it's what I bring to the three projects below.
 
