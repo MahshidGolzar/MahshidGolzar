@@ -2,7 +2,7 @@
 
 PhD researcher turned quantitative analyst. My PhD was about turbulence, diffusion, and dispersion, and the mathematics behind it turned out to map directly onto quantitative finance: mean drift plus random noise, the same structure underneath Black-Scholes. I made that connection while studying for my MSc in Financial Engineering, and it's shaped how I approach model building ever since.
 
-**My approach to any model:** build it from first principles, calibrate it against real data, stress-test its assumptions, and validate it independently before trusting its output. That's the discipline my PhD trained into me, and it's what I bring to the two projects below.
+**My approach to any model:** build it from first principles, calibrate it against real data, stress-test its assumptions, and validate it independently before trusting its output. That's the discipline my PhD trained into me, and it's what I bring to the three projects below.
 
 ### 🔍 Featured projects
 
@@ -13,6 +13,9 @@ A European option pricer built two independent ways, closed-form analytical and 
 
 **[risk_engine_monte_carlo](https://github.com/MahshidGolzar/risk_engine_monte_carlo)**
 A modular Python risk engine implementing Historical, Parametric, and Monte Carlo VaR alongside Expected Shortfall, validated through Kupiec and Christoffersen backtesting.
+
+**[pytorch-parametric-swish](https://github.com/MahshidGolzar/pytorch-parametric-swish)**
+A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forward and backward, registered via `TORCH_LIBRARY` and built with CMake. The commit history shows the actual bug/fix cycle: a seeded error in the backward pass, a `gradcheck`-based test that catches it, and the one-line fix, not a reconstruction after the fact.
 
 ### 🎓 Background
 
