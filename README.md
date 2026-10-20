@@ -9,7 +9,7 @@ Developer with a PhD background in large-scale scientific computing (CFD/HPC), m
 
 **[pytorch-parametric-swish](https://github.com/MahshidGolzar/pytorch-parametric-swish)**
 
-A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forward and backward, registered via `TORCH_LIBRARY` and built with CMake. The first commit's backward pass had a one-line bug in it from the start; the `gradcheck`-based test suite added in the next commit failed against it immediately; a third commit fixed it.
+A custom PyTorch C++ operator (learnable-β Swish activation), registered via `TORCH_LIBRARY` and built with CMake. The first commit's backward pass had a one-line bug in it from the start; the `gradcheck`-based test suite added in the next commit failed against it immediately; a third commit fixed it.
 
 **[quant_validator](https://github.com/MahshidGolzar/quant_validator)**
 
