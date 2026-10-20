@@ -1,7 +1,7 @@
 # Hi, I'm Mahshid 👋
 Developer with a PhD background in large-scale scientific computing (CFD/HPC), moving into applied AI and C++/PyTorch framework work. Four years writing and debugging numerical C++, Fortran, and Python on university HPC Linux clusters during a PhD in Computational Fluid Dynamics, producing six peer-reviewed publications. Alongside seven years of technical teaching (ongoing since 2019), retrained in applied AI through a WorldQuant University MSc (2023–2025). The discipline is the same wherever I apply it: build from first principles, test rigorously, trust nothing until it's validated. That's what the projects below are for.
 
-**My approach to any model:** build it from first principles, calibrate it against real data, stress-test its assumptions, and validate it independently before trusting its output. That's the discipline my PhD trained into me, and it's what I bring to the projects below.
+
 
 ### 🔍 Featured projects
 
