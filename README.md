@@ -9,10 +9,10 @@ C++ and Python engineer with a PhD background in large-scale scientific computin
 #### C++
 
 **[pytorch-parametric-swish](https://github.com/MahshidGolzar/pytorch-parametric-swish)** — advanced
-A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forward and backward, registered via `TORCH_LIBRARY` and built with CMake. The commit history shows the actual bug/fix cycle: a seeded error in the backward pass, a `gradcheck`-based test that catches it, and the one-line fix, not a reconstruction after the fact.
+A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forward and backward, registered via `TORCH_LIBRARY` and built with CMake. Mutation-tested: deliberately broke the backward pass, confirmed `gradcheck` caught it, then fixed it. The commit history shows the real 3-commit cycle, not a reconstruction after the fact.
 
 **[quant_validator](https://github.com/MahshidGolzar/quant_validator)** — medium
-A from-scratch int8 quantization validator — the float32-to-int8 conversion AI framework code uses to target hardware accelerators — with a hand-written test suite. The first version had a seeded bug: an out-of-range value silently wrapped around (20.0 became -56) instead of being clamped. Two tests caught it; the real commit history shows the bug, then the one-line fix.
+A from-scratch int8 quantization validator — the float32-to-int8 conversion AI framework code uses to target hardware accelerators — with a hand-written test suite, also mutation-tested: removed the range clamp, confirmed two tests caught the resulting out-of-range value (20.0 silently wrapped to -56), restored it. The real commit history shows the mutant, then the one-line fix.
 
 **[MiniTensorinC-](https://github.com/MahshidGolzar/MiniTensorinC-)** — simple
 A small, dependency-free 2D matrix ("tensor") class: a flat buffer plus a shape, with elementwise ops and real matrix multiplication. Built to understand what a `Tensor` actually is underneath a framework like PyTorch, before extending one.
