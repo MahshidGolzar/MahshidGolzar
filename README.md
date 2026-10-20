@@ -1,6 +1,6 @@
 # Hi, I'm Mahshid 👋
 
-C++ and Python engineer with a PhD background in large-scale scientific computing, now moving into applied AI and deep learning. My PhD was about turbulence, diffusion, and dispersion, and the mathematics behind it turned out to map directly onto quantitative finance: mean drift plus random noise, the same structure underneath Black-Scholes. I made that connection while studying for my MSc in Financial Engineering — and the same discipline (build from first principles, test rigorously, trust nothing until it's validated) is what I'm now bringing to C++/PyTorch and AI framework work.
+Developer with a PhD background in large-scale scientific computing (CFD/HPC), moving into applied AI and C++/PyTorch framework work. Five years writing and debugging numerical C++, Fortran, and Python on university HPC Linux clusters during a PhD in Computational Fluid Dynamics, producing six peer-reviewed publications — then seven years of technical teaching, then a WorldQuant University MSc retraining in applied AI. The discipline is the same wherever I apply it: build from first principles, test rigorously, trust nothing until it's validated. That's what the projects below are for.
 
 **My approach to any model:** build it from first principles, calibrate it against real data, stress-test its assumptions, and validate it independently before trusting its output. That's the discipline my PhD trained into me, and it's what I bring to the projects below.
 
@@ -10,11 +10,11 @@ C++ and Python engineer with a PhD background in large-scale scientific computin
 
 **[pytorch-parametric-swish](https://github.com/MahshidGolzar/pytorch-parametric-swish)**
 
-A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forward and backward, registered via `TORCH_LIBRARY` and built with CMake. I manually injected a one-line fault into the backward pass to check my test suite would catch it, confirmed `gradcheck` failed against it, then fixed it. Commit history: scaffold, failing test, fix.
+A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forward and backward, registered via `TORCH_LIBRARY` and built with CMake. I manually injected a one-line fault into the backward pass to check my test suite would catch it, confirmed `gradcheck` failed against it, then fixed it. The original three commits: scaffold, failing test, fix.
 
 **[quant_validator](https://github.com/MahshidGolzar/quant_validator)**
 
-A from-scratch int8 quantization validator — the float32-to-int8 conversion AI framework code uses to target hardware accelerators — with a hand-written test suite. Same approach: removed the range clamp, confirmed two tests caught the resulting `int`→`int8_t` narrowing fault (20.0 at scale 0.1 silently wrapped to -56), restored it.
+A from-scratch int8 quantization validator — the float32-to-int8 conversion AI framework code uses to target hardware accelerators — with a Catch2 test suite and GitHub Actions CI (including ASan/UBSan and a Clang implicit-conversion sanitizer build). Same fault-injection approach as above: removed the range clamp, confirmed two checks caught the resulting `int`→`int8_t` narrowing fault (20.0 at scale 0.1 silently wrapped to -56), restored it.
 
 **[mini_tensor](https://github.com/MahshidGolzar/mini_tensor)**
 
