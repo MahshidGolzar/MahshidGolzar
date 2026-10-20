@@ -23,7 +23,7 @@ A small, dependency-free 2D matrix ("tensor") class: a flat buffer plus a shape,
 
 **[black_scholes_pde_greeks](https://github.com/MahshidGolzar/black_scholes_pde_greeks)**
 
-A European option pricer built two independent ways, closed-form analytical and numerical PDE, specifically to cross-validate each other. Implements all four Greeks and three finite-difference schemes (explicit, implicit, Crank-Nicolson), and includes a test that deliberately proves the explicit scheme is unstable on a naive grid, an intentional validation finding, not a bug.
+A European option pricer built two independent ways, closed-form analytical and numerical PDE, specifically to cross-validate each other. Implements all five Greeks (delta, gamma, vega, theta, rho) and three finite-difference schemes (explicit, implicit, Crank-Nicolson), and includes a test that deliberately proves the explicit scheme is unstable on a naive grid, an intentional validation finding, not a bug.
 
 **[risk_engine_monte_carlo](https://github.com/MahshidGolzar/risk_engine_monte_carlo)**
 
