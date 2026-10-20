@@ -14,7 +14,7 @@ A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forw
 **[quant_validator](https://github.com/MahshidGolzar/quant_validator)** — medium
 A from-scratch int8 quantization validator — the float32-to-int8 conversion AI framework code uses to target hardware accelerators — with a hand-written test suite, also mutation-tested: removed the range clamp, confirmed two tests caught the resulting out-of-range value (20.0 silently wrapped to -56), restored it. The real commit history shows the mutant, then the one-line fix.
 
-**[MiniTensorinC-](https://github.com/MahshidGolzar/MiniTensorinC-)** — simple
+**[mini_tensor](https://github.com/MahshidGolzar/mini_tensor)** — simple
 A small, dependency-free 2D matrix ("tensor") class: a flat buffer plus a shape, with elementwise ops and real matrix multiplication. Built to understand what a `Tensor` actually is underneath a framework like PyTorch, before extending one.
 
 #### Python
@@ -25,7 +25,7 @@ A European option pricer built two independent ways, closed-form analytical and 
 **[risk_engine_monte_carlo](https://github.com/MahshidGolzar/risk_engine_monte_carlo)** — advanced
 A modular Python risk engine implementing Historical, Parametric, and Monte Carlo VaR alongside Expected Shortfall, validated through Kupiec and Christoffersen backtesting.
 
-**[simpleVaRinPython](https://github.com/MahshidGolzar/simpleVaRinPython)** — simple
+**[simple_historical_var](https://github.com/MahshidGolzar/simple_historical_var)** — simple
 A single-method, single-asset historical VaR calculation, deliberately stripped down to something explainable on a whiteboard — the simple counterpart to the risk engine above.
 
 ### 🎓 Background
