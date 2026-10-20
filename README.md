@@ -2,7 +2,7 @@
 
 C++ and Python engineer with a PhD background in large-scale scientific computing, now moving into applied AI and deep learning. My PhD was about turbulence, diffusion, and dispersion, and the mathematics behind it turned out to map directly onto quantitative finance: mean drift plus random noise, the same structure underneath Black-Scholes. I made that connection while studying for my MSc in Financial Engineering — and the same discipline (build from first principles, test rigorously, trust nothing until it's validated) is what I'm now bringing to C++/PyTorch and AI framework work.
 
-**My approach to any model:** build it from first principles, calibrate it against real data, stress-test its assumptions, and validate it independently before trusting its output. That's the discipline my PhD trained into me, and it's what I bring to the projects below — paired as a simple and a more advanced one in each language.
+**My approach to any model:** build it from first principles, calibrate it against real data, stress-test its assumptions, and validate it independently before trusting its output. That's the discipline my PhD trained into me, and it's what I bring to the projects below — spanning simple to advanced in both languages.
 
 ### 🔍 Featured projects
 
@@ -10,6 +10,9 @@ C++ and Python engineer with a PhD background in large-scale scientific computin
 
 **[pytorch-parametric-swish](https://github.com/MahshidGolzar/pytorch-parametric-swish)** — advanced
 A custom PyTorch C++ operator (learnable-β Swish activation), hand-derived forward and backward, registered via `TORCH_LIBRARY` and built with CMake. The commit history shows the actual bug/fix cycle: a seeded error in the backward pass, a `gradcheck`-based test that catches it, and the one-line fix, not a reconstruction after the fact.
+
+**[quant_validator](https://github.com/MahshidGolzar/quant_validator)** — medium
+A from-scratch int8 quantization validator — the float32-to-int8 conversion AI framework code uses to target hardware accelerators — with a hand-written test suite. The first version had a seeded bug: an out-of-range value silently wrapped around (20.0 became -56) instead of being clamped. Two tests caught it; the real commit history shows the bug, then the one-line fix.
 
 **[MiniTensorinC-](https://github.com/MahshidGolzar/MiniTensorinC-)** — simple
 A small, dependency-free 2D matrix ("tensor") class: a flat buffer plus a shape, with elementwise ops and real matrix multiplication. Built to understand what a `Tensor` actually is underneath a framework like PyTorch, before extending one.
