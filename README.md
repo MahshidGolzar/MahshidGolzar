@@ -3,23 +3,6 @@ Developer with a PhD background in large-scale scientific computing (CFD/HPC), m
 
 
 
-### 🔍 Featured projects
-
-#### C++
-
-**[pytorch-parametric-swish](https://github.com/MahshidGolzar/pytorch-parametric-swish)**
-
-A custom PyTorch C++ operator (learnable-β Swish activation), registered via `TORCH_LIBRARY` and built with CMake. The first commit's backward pass had a one-line bug in it from the start; the `gradcheck`-based test suite added in the next commit failed against it immediately; a third commit fixed it.
-
-**[quant_validator](https://github.com/MahshidGolzar/quant_validator)**
-
-A from-scratch int8 quantization validator — the float32-to-int8 conversion AI framework code uses to target hardware accelerators — with a Catch2 test suite and GitHub Actions CI (build, plus ASan/UBSan and Clang implicit-conversion sanitizer builds as a general safety net). The first commit's missing range clamp was caught by its own test suite (20.0 at scale 0.1 silently wrapped to -56); I checked whether the sanitizers would also have caught it and documented the honest answer in the README (they don't — it's a logic bug, not a rule violation).
-
-**[mini_tensor](https://github.com/MahshidGolzar/mini_tensor)**
-
-A small, dependency-free 2D matrix ("tensor") class: a flat buffer plus a shape, with elementwise ops and real matrix multiplication. Built to understand what a `Tensor` actually is underneath a framework like PyTorch, before extending one.
-
-#### Python
 
 **[black_scholes_pde_greeks](https://github.com/MahshidGolzar/black_scholes_pde_greeks)**
 
