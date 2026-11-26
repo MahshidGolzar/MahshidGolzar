@@ -1,7 +1,5 @@
 # Hi, I'm Mahshid 👋
-Developer with a PhD background in large-scale scientific computing (CFD/HPC), moving into applied AI and C++/PyTorch framework work. Four years writing and debugging numerical C++, Fortran, and Python on university HPC Linux clusters during a PhD in Computational Fluid Dynamics, producing six peer-reviewed publications. Alongside seven years of technical teaching (ongoing since 2019), retrained in applied AI through a WorldQuant University MSc (2023–2025). The discipline is the same wherever I apply it: build from first principles, test rigorously, trust nothing until it's validated. That's what the projects below are for.
-
-
+Computational modeller and lecturer with a PhD in computational fluid dynamics. My research meant running and validating numerical simulations on university HPC clusters, mostly in ANSYS Fluent and MATLAB.It led to six publications, including two journal articles and a book chapter. I've taught Python programming, data science, maths, physics and BTEC Level 3 Engineering at a London college since 2019. I'm now building hands-on experience in machine learning and quantitative methods through a WorldQuant University MSc and independent projects. I care about checking models against data before trusting them, and I'm looking for a role where I can keep doing that and learn from experienced colleagues
 
 
 **[black_scholes_pde_greeks](https://github.com/MahshidGolzar/black_scholes_pde_greeks)**
